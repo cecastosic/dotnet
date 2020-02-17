@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ThirtyOne.Helpers;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace ThirtyOne.Models
 {
@@ -106,6 +107,24 @@ namespace ThirtyOne.Models
 
             if (CurrentPlayer is ComputerPlayer) return NextTurn(); //If the next player is the computer, execute that turn right away.
             else return false;
+        }
+
+        public string SerializeGame()
+        {
+            var jsonSerializerSettings = new JsonSerializerSettings()
+            {
+                TypeNameHandling = TypeNameHandling.Auto
+            };
+            return JsonConvert.SerializeObject(this, jsonSerializerSettings);
+        }
+
+        public static Game DeserializeGame(string json)
+        {
+            var jsonSerializerSettings = new JsonSerializerSettings()
+            {
+                TypeNameHandling = TypeNameHandling.Auto
+            };
+            return JsonConvert.DeserializeObject<Game>(json, jsonSerializerSettings);
         }
     }
 }

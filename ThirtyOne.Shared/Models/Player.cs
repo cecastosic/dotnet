@@ -11,6 +11,8 @@ namespace ThirtyOne.Models
 
         public bool HasKnocked { get; set; }
 
+        public string LastAction { get; set; }
+
         public Player()
         {
             Hand = new List<Card>();
