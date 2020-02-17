@@ -17,7 +17,7 @@ namespace ThirtyOne.Models
             {
                 Console.WriteLine("\t" + c.ToString());
             }
-            Console.WriteLine($"Hand score: {Hand.CalculateScore()}\n");
+            Console.WriteLine($"Hand score: {Hand.CalculateScore()}\n"); // should show suit also
             if (g.Table.Count > 0)
             {
                 Console.WriteLine("On the table there is " + g.Table.Last().ToString() + ". Do you want to draw from the Table (T) or the Deck (D) or Call/Knock (C)?");
