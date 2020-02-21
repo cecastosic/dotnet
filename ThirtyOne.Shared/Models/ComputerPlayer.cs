@@ -25,7 +25,7 @@ namespace ThirtyOne.Models
             if (Hand.CalculateScore() > 25 && !game.Players.Any(p => p.HasKnocked) &&
                 _randomNumberGenerator.Next(3) == 1)
             {
-                Console.WriteLine($"{Name} knocks on the table");
+                LastAction = "knocks";
                 //Knock
                 HasKnocked = true;
             }
@@ -34,12 +34,12 @@ namespace ThirtyOne.Models
                 //Decide if I should draw from table or from deck
                 if (game.Table.Any() && game.Table.Last().Value >= 10 && _randomNumberGenerator.Next(2) == 1)
                 {
-                    Console.WriteLine($"{Name} draws a card from the table");
+                    LastAction = "draws a card from the table";
                     DrawFromTable(game);
                 }
                 else
                 {
-                    Console.WriteLine($"{Name} draws a card from the deck");
+                    LastAction = "draws a card from the deck";
                     DrawFromDeck(game);
                 }
 
@@ -51,7 +51,7 @@ namespace ThirtyOne.Models
                 }
 
                 int index = Hand.IndexOf(lst.OrderByDescending(l => l.Item2).First().Item1);
-                Console.WriteLine($"{Name} drops {Hand[index].ToString()}");
+                LastAction += $" and drops {Hand[index].ToString()}";
                 DropCard(game, index);
             }
         }

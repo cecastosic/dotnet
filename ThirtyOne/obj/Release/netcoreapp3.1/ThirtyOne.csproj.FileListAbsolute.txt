@@ -1,0 +1,15 @@
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.deps.json
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.runtimeconfig.json
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.runtimeconfig.dev.json
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.dll
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.pdb
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.Shared.dll
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/bin/Release/netcoreapp3.1/ThirtyOne.Shared.pdb
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.csprojAssemblyReference.cache
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.AssemblyInfoInputs.cache
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.AssemblyInfo.cs
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.csproj.CopyComplete
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.dll
+/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/Release/netcoreapp3.1/ThirtyOne.pdb

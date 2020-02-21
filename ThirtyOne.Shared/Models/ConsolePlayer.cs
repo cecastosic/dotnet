@@ -37,7 +37,7 @@ namespace ThirtyOne.Models
             Console.WriteLine("You drew a card. Your hand: ");
             for (var i = 0; i < Hand.Count; i++)
             {
-                Console.WriteLine("\t" + (i + 1) + "\t" + Hand[i].ToString());
+                Console.WriteLine("\t" + (i+1).ToString() + "\t" + Hand[i].ToString());
             }
 
             Console.WriteLine("Which card to drop? (1-4)");

@@ -10,19 +10,6 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "ThirtyOne.Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "bin/placeholder/ThirtyOne.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ThirtyOne.Shared.dll": {}
-        }
       }
     }
   },
@@ -57,16 +44,11 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "ThirtyOne.Shared/1.0.0": {
-      "type": "project",
-      "path": "../ThirtyOne.Shared/ThirtyOne.Shared.csproj",
-      "msbuildProject": "../ThirtyOne.Shared/ThirtyOne.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ThirtyOne.Shared >= 1.0.0"
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -76,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ceca/Projects/ThirtyOne/ThirtyOne/ThirtyOne.csproj",
-      "projectName": "ThirtyOne",
-      "projectPath": "/Users/ceca/Projects/ThirtyOne/ThirtyOne/ThirtyOne.csproj",
+      "projectUniqueName": "/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/ThirtyOne.Shared.csproj",
+      "projectName": "ThirtyOne.Shared",
+      "projectPath": "/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/ThirtyOne.Shared.csproj",
       "packagesPath": "/Users/ceca/.nuget/packages/",
-      "outputPath": "/Users/ceca/Projects/ThirtyOne/ThirtyOne/obj/",
+      "outputPath": "/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -96,11 +78,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/ThirtyOne.Shared.csproj": {
-              "projectPath": "/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/ThirtyOne.Shared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -111,6 +89,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
