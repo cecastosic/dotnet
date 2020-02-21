@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ThirtyOne.Models
+namespace ThirtyOne.Shared.Models
 {
     public abstract class Player
     {

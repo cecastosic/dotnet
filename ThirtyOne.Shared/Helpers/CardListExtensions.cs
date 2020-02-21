@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ThirtyOne.Models;
+using ThirtyOne.Shared.Models;
 
 namespace ThirtyOne.Helpers
 {
@@ -21,5 +21,15 @@ namespace ThirtyOne.Helpers
         {
             return string.Join(",", Cards); 
         }
+
+        public static Suite ShowSuite(this IEnumerable<Card> Cards)
+        {
+            return Cards
+                .GroupBy(card => card.Suit) //group by suit
+                .OrderByDescending(group => group.Sum(card => card.Value)) //per group make a sum of card values and order with descending 
+                .First() // take the first group
+                .First().Suit;
+        }
+
     }
 }

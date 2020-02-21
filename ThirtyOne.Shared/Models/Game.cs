@@ -4,7 +4,7 @@ using ThirtyOne.Helpers;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace ThirtyOne.Models
+namespace ThirtyOne.Shared.Models
 {
     public class Game
     {

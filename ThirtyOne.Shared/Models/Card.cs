@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ThirtyOne.Models
+namespace ThirtyOne.Shared.Models
 {
     public class Card
     {

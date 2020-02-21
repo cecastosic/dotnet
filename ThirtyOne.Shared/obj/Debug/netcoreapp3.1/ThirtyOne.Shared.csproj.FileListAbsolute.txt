@@ -1,7 +1,0 @@
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/bin/Debug/netcoreapp3.1/ThirtyOne.Shared.deps.json
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/bin/Debug/netcoreapp3.1/ThirtyOne.Shared.dll
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/bin/Debug/netcoreapp3.1/ThirtyOne.Shared.pdb
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/obj/Debug/netcoreapp3.1/ThirtyOne.Shared.AssemblyInfoInputs.cache
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/obj/Debug/netcoreapp3.1/ThirtyOne.Shared.AssemblyInfo.cs
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/obj/Debug/netcoreapp3.1/ThirtyOne.Shared.dll
-/Users/ceca/Projects/ThirtyOne/ThirtyOne.Shared/obj/Debug/netcoreapp3.1/ThirtyOne.Shared.pdb

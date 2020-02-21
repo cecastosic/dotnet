@@ -2,6 +2,7 @@
 using System.IO;
 using ThirtyOne.Helpers;
 using ThirtyOne.Models;
+using ThirtyOne.Shared.Models;
 
 namespace ThirtyOne
 {
