@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using ThirtyOne.Helpers;
+using ThirtyOne.Shared.Helpers;
 using ThirtyOne.Shared.Models;
 
 namespace ThirtyOne.Models

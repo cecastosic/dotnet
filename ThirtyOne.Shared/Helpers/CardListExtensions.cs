@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ThirtyOne.Shared.Models;
 
-namespace ThirtyOne.Helpers
+namespace ThirtyOne.Shared.Helpers
 {
     public static class CardListExtensions
     {

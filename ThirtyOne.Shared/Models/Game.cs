@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ThirtyOne.Helpers;
+using ThirtyOne.Shared.Helpers;
 using System.Linq;
 using Newtonsoft.Json;
 
@@ -24,9 +24,12 @@ namespace ThirtyOne.Shared.Models
 
         public Player Winner { get; set; }
 
+        public int GameId { get; set; }
+
         public GameState State { get; set; }
 
-        public Game() {
+        public Game()
+        {
             Players = new List<Player>();
             State = GameState.WaitingToStart;
         }
@@ -42,7 +45,8 @@ namespace ThirtyOne.Shared.Models
             Table.Add(Deck.DrawCard());
         }
 
-        public void StartGame() {
+        public void StartGame()
+        {
             Deck = new Deck();
             Table = new List<Card>();
 
