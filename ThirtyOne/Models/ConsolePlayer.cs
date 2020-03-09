@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using ThirtyOne.Shared.Helpers;
 using ThirtyOne.Shared.Models;
+using ThirtyOne.Shared.Helpers;
 
 namespace ThirtyOne.Models
 {

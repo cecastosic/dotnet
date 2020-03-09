@@ -16,6 +16,7 @@ namespace ThirtyOne.Shared.Models
 
         public int CurrentTurn { get; set; } 
 
+        [JsonIgnore]
         public Player CurrentPlayer { get
             {
                 return Players[CurrentTurn];

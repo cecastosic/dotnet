@@ -1,22 +1,109 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+body {
+    background-color: #076324;
+    box-shadow: inset rgba(0, 0, 0, 0.75) 1px 1px 20px 5px;
+    color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar-dark {
+    background: #0E1A15 !important;
+}
+
+body > .container {
+    min-height: 98vh;
+    max-width: 100%;
+    padding: 1em 0 1em;
+    width: 100%;
+}
+
+.container .jumbotron {
+    background: #ffc107;
+    margin: -2em 0 0;
+    padding: 0.6em !important;
+    text-align: center !important;
+}
+
+.container .jumbotron p {
+    margin-bottom: 0 !important;
+}
+
+.footer {
+    background: #0E1A15 !important;
+    margin: 0;
+}
+
+.footer a {
+    color: rgba(255,255,255,.5);
+    text-decoration:none;
+}
+
+.footer a:hover {
+    color: rgba(255,255,255,.8);
+}
 
 
+form input[type=text] {
+    margin: 2em auto 0;
+    width: 60%;
+}
 
 img.selectablecard:hover {
     transform: scale(1.1);
 }
 
 div.cardtable {
-    background-color: darkgreen;
+    /*background-color: darkgreen;
     border: 5px groove brown;
     border-radius: 25px;
-    padding: 20px;
+    padding: 20px;*/
+    position:relative;
+}
+
+div.row {
+    justify-content:center;
+}
+
+.row h3 {
+    text-align:center;
+}
+
+img.knock {
+    background: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 0.25rem;
+    display: inline-block;
+    max-height: 80px;
+    right: 200px;
+    position: absolute;
+    padding: 10px 20px;
+}
+
+img.knock:hover {
+    background-color: #23272b;
+    border-color: #23272b;
+    transform: none;
 }
 
 img.playingcard {
     height: 150px;
     margin: 0px 0px 0px 0px;
+}
+
+
+div.col-md-11 > h3 {
+    margin-top: 2em;
+}
+
+.jumbotron + .container div.col-md-11 > h3 {
+    margin-top: 1.1em;
+}
+
+
+div.col-md-11 > h3:first-child {
+    margin-top: 0.5em;
 }
 
 a.navbar-brand {
@@ -42,6 +129,25 @@ a {
     border-color: #1861ac;
 }
 
+.sticky {
+    position:fixed;
+    right: 0;
+    top: 80px;
+}
+
+.sticky .list-group {
+    font-size:0.9em;
+    max-width: 200px;
+}
+
+.sticky .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #0E1A15;
+    border-color: #0E1A15;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -54,16 +160,8 @@ html {
     }
 }
 
-.border-top {
-    border-top: 1px solid #e5e5e5;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
 .box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: rgba(0, 0, 0, 0.75) 1px 1px 20px 5px;
 }
 
 button.accept-policy {
@@ -89,4 +187,18 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
+}
+
+@media only screen and (max-width: 768px) {
+    .sticky {
+        position: relative;
+        width:90%;
+    }
+    .sticky .list-group {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+    img.knock {
+        right: 10px;
+    }
 }
