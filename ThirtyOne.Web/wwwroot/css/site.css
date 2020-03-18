@@ -21,6 +21,14 @@ body > .container {
     width: 100%;
 }
 
+.container h1.display-5 {
+    padding-top:1em;
+}
+
+.container .jumbotron h1.display-5 {
+    padding-top: 0;
+}
+
 .container .jumbotron {
     background: #ffc107;
     margin: 0;
@@ -82,7 +90,7 @@ img.knock {
     max-height: 80px;
     right: 200px;
     position: absolute;
-    padding: 10px 20px;
+    padding: 0.6em 1.2em;
 }
 
 img.knock:hover {
@@ -97,14 +105,26 @@ img.playingcard {
     z-index: 2;
 }
 
-.player img.playingcard:first-child {
+.select-card img.playingcard {
+    margin: 0 0 0 -15px;
+    transform: rotate(-5deg);
+}
+
+.player img.playingcard:first-child,
+.select-card a:first-child img.playingcard {
     margin: 15px -15px 0 0;
     transform: rotate(-20deg);
     z-index: 1;
 }
 
-.player img.playingcard:last-child {
-    margin: 15px 0 0 -10px;
+.select-card a:nth-child(3) img.playingcard {
+    margin: 0 0 0 -10px;
+    transform: rotate(5deg);
+}
+
+.player img.playingcard:last-child,
+.select-card a:last-child img.playingcard {
+    margin: 15px 0 0 -15px;
     transform: rotate(20deg);
     z-index: 3;
 }
@@ -214,5 +234,13 @@ body {
     }
     img.knock {
         right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img.knock {
+        right: 0;
+        padding: 0.6em 0.1em;
+        max-height: 7t0px;
     }
 }
