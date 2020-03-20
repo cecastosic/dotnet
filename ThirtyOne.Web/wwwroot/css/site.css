@@ -106,7 +106,7 @@ img.playingcard {
 }
 
 .select-card img.playingcard {
-    margin: 0 0 0 -15px;
+    margin: 0 0 0 -25px;
     transform: rotate(-5deg);
 }
 
@@ -118,7 +118,7 @@ img.playingcard {
 }
 
 .select-card a:nth-child(3) img.playingcard {
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 -25px;
     transform: rotate(5deg);
 }
 
@@ -127,6 +127,10 @@ img.playingcard {
     margin: 15px 0 0 -15px;
     transform: rotate(20deg);
     z-index: 3;
+}
+
+.select-card a:last-child img.playingcard {
+    margin: 15px 0 0 -25px;
 }
 
 
@@ -241,6 +245,6 @@ body {
     img.knock {
         right: 0;
         padding: 0.6em 0.1em;
-        max-height: 7t0px;
+        max-height: 70px;
     }
 }
