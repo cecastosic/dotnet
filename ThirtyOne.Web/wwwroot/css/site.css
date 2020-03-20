@@ -239,6 +239,9 @@ body {
     img.knock {
         right: 10px;
     }
+    .text-left {
+        width:98%;
+    }
     .ml-5 {
         margin-left: 1em !important;
     }
